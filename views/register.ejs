@@ -1,0 +1,17 @@
+<%- include("partials/header")%>
+
+    <h1 class="text-[4vw] p-4 text-center uppercase font-[700] opacity-[.8]">welcome to register page</h1>
+
+    <div class="mt-10 w-[80%] bg-blue-400 mx-auto p-10 rounded-[10px]">
+     
+        <form class="flex justify-center gap-3" action="/user/register" method="post">
+          <input class="border-2 border-slate-900 p-2" type="text" name="name" placeholder="Name">
+          <input class="border-2 border-slate-900 p-2" type="email" name="email" placeholder="Email">
+          <input class="border-2 border-slate-900 p-2" type="password" name="password" placeholder="Password">
+          <input class="border-2 border-slate-900 p-2" type="text" name="role" placeholder="Role">
+          <button class="px-[3vw] py-[.5vw] bg-green-400 rounded">Submit</button>
+        </form>
+    
+      </div>
+
+    <%- include("partials/footer")%> 

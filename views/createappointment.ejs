@@ -1,0 +1,12 @@
+<%- include("partials/header")%>
+<h1 class="text-[4vw] p-4 text-center uppercase font-[700]">welcome to Appointment Page</h1>
+  <div class="mt-10 w-[80%] mx-auto p-10">
+   
+    <form action="/appointment/<%= pid%>" method="post">
+      <input class="border" type="text" name="status" placeholder="scheduled, completed, canceled">
+      <input class="border" type="date" name="date" placeholder="Date">
+      <button>Submit</button>
+    </form>
+
+  </div>
+  <%- include("partials/footer")%>

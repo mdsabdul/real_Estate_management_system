@@ -1,0 +1,25 @@
+<%- include("partials/header")%>
+
+  <h1 class="text-[4vw] p-4 text-center uppercase font-[700]"> Appointments</h1>
+  <!-- <% if(user==="owner" || user==="agent" ){%>
+        <div>
+            <a href="/property">Create Property</a>
+        </div>
+        <%}%> -->
+  <div class="   ml-[10vw] h-[50vh] m-auto mt-[1vw] rounded  flex flex-wrap  gap-[1vw]">
+    <% newappointment.forEach((all)=>{%>
+      <div class=" w-[40%] h-[15vw] overflow-auto  bg-red-400">
+        <%= JSON.stringify(all)%> <br> <br>
+
+
+          <a class="bg-yellow-500 p-3 rounded-[1vw]" href="/appointment/delete/<%= all._id%>">Delete Appointments</a>
+      </div>
+      <br> <br>
+
+
+      <% })%> <br> <br>
+        <!-- <a class="absolute top-[5%] right-[2%] text-[1.5vw] px-[1vw] py-[.5vw] rounded-[1vw] bg-red-400 text-grey-800"  href="/user/logout">Logout</a>
+            <div class="w-[30%] bg-green-500 m-auto pl-[7vw] py-[2vw] text-[2vw] rounded ">
+             <a class="hover:underline" href="/property">Create Property</a> -->
+  </div>
+  <%- include("partials/footer")%>

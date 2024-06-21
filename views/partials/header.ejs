@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+   
+</head>
+<body style="position: relative;">
+    <nav class="flex justify-center gap-[1.5vw]  font-[600] text-[1.5vw] ">
+        <%if(user){%>
+            <a class="border-b-2 border-slate-900 "  href="/user">Home</a>
+            <a class="border-b-2 border-slate-900  " href="/user/profile">Profile</a>
+      <% }else{%>
+        <a class="border-b-2 border-slate-900 "  href="/user">Home</a>
+        <a class=" border-b-2 border-slate-900"  href="/user/login">Login</a>
+    <%  }%>
+      
+    </nav>

@@ -1,0 +1,38 @@
+<%- include("partials/header")%>
+
+  <h1 class="text-[2.6vw]  p-4 text-center uppercase font-[700] leading-[3vw] bg-blue-400 mt-[1vw]">welcome to Homepage <br> of real estate management system</h1>
+
+
+  <div class="mx-auto my-[1vw] h-[70vh] w-[70%] bg-green-100">
+      <video class="h-[100%] w-[100%] cover" controls autoplay loop muted src="/images/vdo.mp4"></video>
+  </div>
+  <!-- <div class="w-[60%] bg-green-500 m-auto pl-[7vw] py-[2vw] text-[2vw] rounded "> -->
+    <!-- <a class="hover:underline" href="/property">Create Property</a>
+  </div>
+
+    
+<div class="w-[60%]  m-auto mt-[1vw] rounded overflow-auto flex flex-col gap-[1vw] ">
+  <%  properties.forEach((p)=>{%>
+    <div >
+      <%= JSON.stringify(p)%>
+    </div> 
+    <br> <br>
+      <a class="bg-green-500 p-3 rounded-[1vw]" href="/appointment">Get Appointment</a>
+
+  <% })%> -->
+<!-- </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <%- include("partials/footer")%>

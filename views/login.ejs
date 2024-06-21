@@ -1,0 +1,18 @@
+<%- include("partials/header")%>
+
+    <!-- <h1 class="text-[4vw] p-4 text-center uppercase font-[700]">welcome to login page</h1> -->
+
+    <div class="w-[20%] h-[30vw] bg-blue-400 m-auto  flex justify-center rounded-[10px] mt-[5vw] " >
+        
+        <form class="flex flex-col items-center  gap-0"  action="/user/login" method="post">
+            <h1 class="text-[1.8vw] py-[2vw]">Login/Sign in</h1>  
+            <input class="border-2 border-slate-900 p-2" type="email" name="email" placeholder="email"> <br> 
+            <input class="border-2 border-slate-900 p-2" type="password" name="password" placeholder="password"> <br> 
+
+            <button class="px-[3vw] py-[.5vw] bg-green-400 rounded">Login</button> <br>
+            <a class="mx-auto px-[3vw] py-[.5vw] bg-green-400 rounded"  href="/user/register">Register User</a>
+        </form> <br>
+       
+    </div>
+
+    <%- include("partials/footer")%>

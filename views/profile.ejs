@@ -1,0 +1,29 @@
+<%- include("partials/header")%>
+
+  <h1 class="text-[4vw] p-4 text-center uppercase font-[700]">welcome to profile page</h1>
+  <% if(user==="owner" || user==="agent" ){%>
+    <div>
+      <a href="/property">Create Property</a>
+    </div>
+    <%}%>
+      <div class="   ml-[10vw] h-[50vh] m-auto mt-[1vw] rounded  flex flex-wrap  gap-[1vw]">
+        <% properties.forEach((p)=>{%>
+          <div class=" w-[40%] h-[15vw] overflow-auto  bg-red-400">
+            <%= JSON.stringify(p)%> <br> <br>
+              <a class="bg-green-500 p-3 rounded-[1vw]" href="/appointment/<%=p._id%>">Get Appointment</a> <br> <br>
+
+              <a class="bg-yellow-500 p-3 rounded-[1vw]" href="/user/delete/<%=p._id%>">Delete Property</a>
+          </div>
+          <br> <br>
+
+
+          <% })%> <br> <br>
+            <a class="absolute top-[5%] right-[2%] text-[1.5vw] px-[1vw] py-[.5vw] rounded-[1vw] bg-red-400 text-grey-800"
+              href="/user/logout">Logout</a>
+            
+              <a class=" mt-[50vh] bg-green-500 absolute px-[1vw] text-[1.5vw]  rounded top-[40%] left-[85%] px-[1vw] py-[1vw] hover:underline" href="/property">Create Property</a>
+           
+            <a class="px-[1.8vw] py-[.5vw] bg-green-500 rounded absolute left-[85%] top-[80%] mt-[32vh]  text-[1.2vw] "
+              href="/user/allappointments"> APPOINTMENTS</a>
+
+            <%- include("partials/footer")%>
